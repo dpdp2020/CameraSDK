@@ -355,3 +355,4 @@ MigrationBackup/
 /3rdparty/jz_aac
 /compiler/mips-gcc472-glibc216-64bit-r2.3.3.7z
 /compiler/arm32.tar.gz
+/samples/ingenic_vi_venc_test.cpp
