@@ -351,6 +351,7 @@ MigrationBackup/
 /3rdparty/fdk-aac-2.0.2/documentation
 /3rdparty/imp-t31/doc
 /3rdparty/imp-t31/include_en
-/compiler
 /out/build
 /3rdparty/jz_aac
+/compiler/mips-gcc472-glibc216-64bit-r2.3.3.7z
+/compiler/arm32.tar.gz
