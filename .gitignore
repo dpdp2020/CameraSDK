@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/3rdparty/fdk-aac-2.0.2/documentation
+/3rdparty/imp-t31/doc
+/3rdparty/imp-t31/include_en
+/compiler
+/out/build
+/3rdparty/jz_aac
