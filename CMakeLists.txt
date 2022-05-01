@@ -21,7 +21,6 @@ string(STRIP ${ROOT_DIR} ROOT_DIR)
 message("project root is ${ROOT_DIR}")
 
 
-
 #####################################################
 #解压编译器
 if(FLATFORM_ROCKCHIP)
@@ -54,14 +53,14 @@ endif(FLATFORM_INGENIC)
 #####################################################
 #编译openssl
 SET(OPENSSL_DIR ${ROOT_DIR}/3rdparty/openssl-1.1.0l)
-EXEC_PROGRAM("cd ${OPENSSL_DIR} && rm Makefile && ./config no-asm shared no-async --prefix=${INSTALL_LIBRARY_PATH} --cross-compile-prefix=${COMPILER_PREFIX}")
+EXEC_PROGRAM("cd ${OPENSSL_DIR} && ./config no-asm shared no-async --prefix=${INSTALL_LIBRARY_PATH} --cross-compile-prefix=${COMPILER_PREFIX}")
 if(FLATFORM_INGENIC)
 	EXEC_PROGRAM("cd ${OPENSSL_DIR} && sed -i 's/-m64/-muclibc/g' Makefile")
 endif(FLATFORM_INGENIC)
 if(FLATFORM_ROCKCHIP)
 	EXEC_PROGRAM("cd ${OPENSSL_DIR} && sed -i 's/-m64//g' Makefile")
 endif(FLATFORM_ROCKCHIP)
-EXEC_PROGRAM("cd ${OPENSSL_DIR} && make -j4 && make install")
+EXEC_PROGRAM("cd ${OPENSSL_DIR} && make clean && make -j4 && make install")
 
 #####################################################
 #编译srt
