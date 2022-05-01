@@ -8,8 +8,18 @@
 
 1）在本项目的安装路径CameraSDK下，创建compiler子目录，
 
-2）下载瑞芯微交叉编译工具：在浏览器中输入http://www.baozan.cloud/download/arm32.tar.gz。
+2）下载瑞芯微交叉编译工具：
+    
+    #linux命令行下输入  
+    wget http://www.baozan.cloud/download/arm32.tar.gz
+    
+    #windows操作系统，在浏览器中输入 http://www.baozan.cloud/download/arm32.tar.gz
 
 3）把下载的arm32.tar.gz文件拷贝到compiler子目录里。
 
-4）解压交叉编译工具：tar zfvx arm32.tar.gz
+4）解压交叉编译工具：
+
+    #linux命令行下输入
+    tar zfvx arm32.tar.gz
+    
+    #windows操作系统，用winRAR软件解压
